@@ -15,7 +15,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 80px; /* Offset for navbar */
-  background-image: url('../../images/bg.png');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/bmsm-49594.firebasestorage.app/o/hero_bg%2Fbg.png?alt=media&token=588be05f-9f14-4b3b-858e-3593dd1afe7c');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

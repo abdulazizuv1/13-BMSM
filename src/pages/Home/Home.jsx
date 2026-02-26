@@ -102,7 +102,7 @@ const Home = () => {
                         </div>
                         <div className="about-image-wrapper" data-aos="fade-left">
                             <div className="about-image-inner">
-                                <img src="./images/about_us.png" alt="13-BMSM Maktab binosi" />
+                                <img src="https://firebasestorage.googleapis.com/v0/b/bmsm-49594.firebasestorage.app/o/about_us%2Fabout_us.png?alt=media&token=a8297ac2-3e83-43f7-8400-fa3aac772702" alt="13-BMSM Maktab binosi" />
                             </div>
                             <div className="about-experience-badge">
                                 <span className="years">55+</span>
@@ -258,7 +258,7 @@ Xabar: ${formData.get('message')}
                                     `;
 
                                     const botToken = '8571003959:AAEHDP9kdglW3IB6cX-WlpBY8N9Ec6OxlPw';
-                                    const chatId = '1351499476'; 
+                                    const chatId = '1351499476';
 
                                     try {
                                         const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
