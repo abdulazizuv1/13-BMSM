@@ -49,7 +49,8 @@ const DashboardLayout = () => {
         <div className="admin-layout">
             {/* Sidebar */}
             <aside className="admin-sidebar islimi-bg">
-                <div className="sidebar-header">
+                <div className="sidebar-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+                    <img src="/images/logo.png" alt="13-BMSM Logo" style={{ height: '60px', width: 'auto', marginBottom: '10px' }} />
                     <h2>13-BMSM Admin</h2>
                     <p>{user.email}</p>
                 </div>

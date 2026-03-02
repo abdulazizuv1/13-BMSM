@@ -15,6 +15,7 @@ import './Home.css';
 const Home = () => {
     const [loading, setLoading] = useState(true);
     const [news, setNews] = useState([]);
+    const [bgLoaded, setBgLoaded] = useState(false);
 
     useEffect(() => {
         const fetchNews = async () => {
@@ -31,8 +32,22 @@ const Home = () => {
         fetchNews();
     }, []);
 
+    useEffect(() => {
+        const bgUrl = 'https://firebasestorage.googleapis.com/v0/b/bmsm-49594.firebasestorage.app/o/hero_bg%2Fbg.png?alt=media&token=588be05f-9f14-4b3b-858e-3593dd1afe7c';
+        const img = new Image();
+        img.src = bgUrl;
+        img.onload = () => {
+            setBgLoaded(true);
+        };
+    }, []);
+
     return (
         <div className="home-page">
+            {!bgLoaded && (
+                <div className="full-page-loader">
+                    <img src="/images/logo.png" alt="Loading Logo" className="loader-logo" />
+                </div>
+            )}
             {/* Hero Section */}
             <section className="hero islimi-bg">
                 <div className="container hero-content">

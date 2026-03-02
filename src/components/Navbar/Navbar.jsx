@@ -68,7 +68,8 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${scrolled || location.pathname !== '/' ? 'glass' : 'transparent-nav'}`}>
             <div className="container nav-wrapper">
-                <Link to="/" className="nav-logo">
+                <Link to="/" className="nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <img src="/images/logo.png" alt="13-BMSM Logo" style={{ height: '40px', width: 'auto' }} />
                     <div className="logo-text">
                         <span>Farg'ona viloyat 13-BMSM</span>
                     </div>

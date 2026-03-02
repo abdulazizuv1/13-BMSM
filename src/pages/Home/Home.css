@@ -7,6 +7,26 @@
   to { opacity: 1; }
 }
 
+@keyframes pulseLogo {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.full-page-loader {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background-color: var(--color-bg, #f8fafc);
+  z-index: 99999;
+}
+
+.loader-logo {
+  width: 150px;
+  height: auto;
+  animation: pulseLogo 1.5s infinite ease-in-out;
+}
+
 /* Hero */
 .hero {
   min-height: 100vh;
